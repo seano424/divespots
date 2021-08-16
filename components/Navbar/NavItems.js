@@ -1,11 +1,12 @@
 import NavItem from './NavItem'
 export default function NavItems() {
   return (
-    <ul className="hidden md:flex items-center flex-shrink-0 space-x-4 h-14 w-14">
-      <NavItem href={'/'} description="helloz" />
-      <NavItem href={'/'} description="helloz" />
-      <NavItem href={'/'} description="helloz" />
-      <NavItem href={'/'} description="helloz" />
+    <ul className="hidden md:flex justify-center items-baseline space-x-14">
+      <NavItem href={'/'} title="locations" />
+      <NavItem href={'/'} title="community" />
+      <NavItem href={'/'} title="about" />
+      <NavItem href={'/'} title="learn" />
+      <NavItem href={'/'} title="help the planet" />
     </ul>
   )
 }

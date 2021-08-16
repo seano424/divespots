@@ -6,7 +6,7 @@ import MobileViewProvider from 'contexts/MobileViewContext'
 
 function MyApp({ Component, pageProps }) {
   return (
-    <ThemeProvider>
+    <ThemeProvider attribute="class">
       <MobileViewProvider>
         <Layout>
           <Component {...pageProps} />

@@ -1,4 +1,6 @@
+import Logo from '@/components/Commons/Logo'
 import Head from 'next/head'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -65,17 +67,94 @@ export default function Home() {
         </div>
       </main>
 
-      <footer className="flex items-center justify-center w-full h-24 border-t">
-        <a
-          className="flex items-center justify-center"
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="h-4 ml-2" />
-        </a>
+      <footer className="flex flex-col items-center justify-center w-full mt-20 text-gray-200">
+        <section className="flex flex-col lg:flex-row gap-10 w-full bg-gray-700 px-32 py-12">
+          <p className=" flex-shrink-0 w-96">
+            We use Octopods at Octopods. Get in touch with us through any of the
+            following channels
+          </p>
+          <aside className="flex gap-x-4 gap-y-2 flex-wrap">
+            <Link href="/">
+              <a className="">Social Media</a>
+            </Link>
+            <Link href="/">
+              <a className="">Social Media</a>
+            </Link>
+            <Link href="/">
+              <a className="">Social Media</a>
+            </Link>
+            <Link href="/">
+              <a className="">Social Media</a>
+            </Link>
+            <Link href="/">
+              <a className="">Social Media</a>
+            </Link>
+            <Link href="/">
+              <a className="">Social Media</a>
+            </Link>
+            <Link href="/">
+              <a className="">Social Media</a>
+            </Link>
+            <Link href="/">
+              <a className="">Social Media</a>
+            </Link>
+          </aside>
+        </section>
+
+        <section className="w-full bg-gray-900 py-20">
+          <article className="flex flex-col lg:flex-row gap-10 px-32">
+            <aside className="flex-shrink-0 w-96">
+              <Logo color="text-white" />
+              <p className="">Connecting scuba divers all over the planet</p>
+            </aside>
+            <div className="flex gap-28">
+              <aside className="flex flex-col flex-wrap gap-y-4">
+                <h3>Product</h3>
+                <Link href="/">
+                  <a className="">Features</a>
+                </Link>
+                <Link href="/">
+                  <a className="">Pricing</a>
+                </Link>
+                <Link href="/">
+                  <a className="">Team</a>
+                </Link>
+              </aside>
+              <aside className="flex flex-col flex-wrap gap-y-4">
+                <h3>Support</h3>
+                <Link href="/">
+                  <a className="">Help Center</a>
+                </Link>
+                <Link href="/">
+                  <a className="">Guides</a>
+                </Link>
+              </aside>
+              <aside className="flex flex-col flex-wrap gap-y-4">
+                <h3>Legal</h3>
+                <Link href="/">
+                  <a className="">Privacy Policy</a>
+                </Link>
+                <Link href="/">
+                  <a className="">Terms of service</a>
+                </Link>
+              </aside>
+            </div>
+          </article>
+
+          <article class="mt-12 border-t lg:mx-80 flex flex-col items-center justify-center border-gray-700 pt-8 bg-gray-900">
+            <p class="text-base leading-6 text-gray-400 xl:text-center">
+              Made with️ ❤️ in Playa del Carmen, Mexico and Kansas, USA 🇺🇸🇲🇽
+            </p>
+
+            <p class="text-base leading-6 text-gray-400 xl:text-center">
+              © 2021 Divespots Software Systems. All rights reserved.
+            </p>
+          </article>
+        </section>
       </footer>
     </div>
   )
 }
+
+// We use the dive community to be more informed divers. And have fun! Get in touch with us through any of
+//               the following channels

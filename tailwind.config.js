@@ -14,6 +14,9 @@ module.exports = {
       },
       colors: {
         fuschia: '#f984ef',
+        'primary-black': '#242C3B',
+        secondary: '#65EBF9',
+        primary: '#3E83F8',
       },
     },
   },
