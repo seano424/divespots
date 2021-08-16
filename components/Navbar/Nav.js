@@ -2,7 +2,7 @@ import NavHamburger from './NavHamburger'
 import NavItems from './NavItems'
 import NavTheme from './NavTheme'
 import MobileNavbarMenu from './MobileNavbarMenu'
-import ProfileNavMenu from './ProfileNavMenu'
+import Profile from './Profile'
 import Logo from '../Commons/Logo'
 
 export default function Nav() {
@@ -16,7 +16,7 @@ export default function Nav() {
           <NavItems />
           <section className="flex justify-end items-center space-x-6">
             <NavTheme />
-            <ProfileNavMenu />
+            <Profile />
           </section>
         </div>
       </div>
