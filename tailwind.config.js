@@ -1,9 +1,21 @@
 module.exports = {
   mode: 'jit',
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: 'class', // or 'media' or 'class', or false
   theme: {
-    extend: {},
+    extend: {
+      transitionDuration: {
+        0: '0ms',
+        1100: '1100ms',
+        1200: '1200ms',
+        1300: '1300ms',
+        1500: '1500ms',
+        2000: '2000ms',
+      },
+      colors: {
+        fuschia: '#f984ef',
+      },
+    },
   },
   variants: {
     extend: {},
