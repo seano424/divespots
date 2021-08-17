@@ -7,7 +7,7 @@ export default function Footer() {
     <footer className="flex flex-col items-center justify-center w-full mt-20 text-gray-200">
       <section className="flex px-10 flex-col lg:flex-row gap-10 w-full bg-gray-700 lg:px-32 py-12">
         <p className=" flex-shrink-0 lg:w-96">
-          We use Octopods at Octopods. Get in touch with us through any of the
+          We use Divespots at Divespots. Get in touch with us through any of the
           following channels
         </p>
         <aside className="flex justify-center gap-y-10 gap-x-10 lg:gap-x-4 lg:gap-y-2 flex-wrap">
@@ -87,12 +87,12 @@ export default function Footer() {
           </div>
         </article>
 
-        <article class="mt-12 border-t lg:mx-80 flex flex-col items-center justify-center border-gray-700 pt-8 bg-gray-900">
-          <p class="text-base leading-6 text-gray-400 xl:text-center">
+        <article className="mt-12 border-t lg:mx-80 flex flex-col items-center justify-center border-gray-700 pt-8 bg-gray-900">
+          <p className="text-base leading-6 text-gray-400 xl:text-center">
             Made with️ ❤️ in Mexico and the USA 🇺🇸🇲🇽
           </p>
 
-          <p class="text-base leading-6 text-gray-400 xl:text-center">
+          <p className="text-base leading-6 text-gray-400 xl:text-center">
             © 2021 Divespots Software Systems. All rights reserved.
           </p>
         </article>

@@ -1,7 +1,7 @@
 import { ThemeProvider } from 'next-themes'
 import 'tailwindcss/tailwind.css'
 import '../styles/globals.css'
-import Layout from '@/components/Layout'
+import Layout from '@/components/Commons/Layout'
 import MobileViewProvider from 'contexts/MobileViewContext'
 
 function MyApp({ Component, pageProps }) {

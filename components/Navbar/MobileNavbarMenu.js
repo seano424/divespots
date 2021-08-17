@@ -1,7 +1,7 @@
 import { useContext } from 'react'
 import { MobileViewContext } from 'contexts/MobileViewContext'
 import Link from 'next/link'
-import MobileNavLink from '../Commons/MobileNavLink'
+import MobileNavLink from './MobileNavLink'
 
 export default function MobileNavbarMenu() {
   const { showMenu } = useContext(MobileViewContext)

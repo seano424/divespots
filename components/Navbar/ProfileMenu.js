@@ -1,7 +1,7 @@
 import { IoIosHeart } from 'react-icons/io'
 import { GoSettings } from 'react-icons/go'
 import { GiMoonBats } from 'react-icons/gi'
-import ProfileLink from '../Commons/ProfileLink'
+import ProfileLink from './ProfileLink'
 import { useContext } from 'react'
 import { MobileViewContext } from 'contexts/MobileViewContext'
 

@@ -1,5 +1,6 @@
 /* ./styles/globals.css */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700;800;900&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -7,4 +8,8 @@
 
 .navitems {
   font-family: 'Montserrat', sans-serif;
+}
+
+.card {
+  font-family: 'Nunito', sans-serif;
 }
