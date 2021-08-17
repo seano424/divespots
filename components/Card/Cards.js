@@ -2,7 +2,7 @@ import Card from './Card'
 export default function Cards() {
   return (
     <main>
-      <div className="grid grid-cols-8 gap-8">
+      <div className="grid grid-cols-4 lg:grid-cols-8 gap-4 lg:gap-8">
         <Card />
         <Card
           image="https://images.unsplash.com/photo-1601871925712-3c803d50fa72?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"

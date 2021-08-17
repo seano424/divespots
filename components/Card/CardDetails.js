@@ -6,8 +6,8 @@ export default function CardDetails({
 }) {
   console.log(weather.temperature)
   return (
-    <section className="absolute px-4 py-1 w-full top-0 left-0 flex flex-col z-50 h-full justify-between">
-      <article className="flex text-sm space-y-4 justify-between items-center">
+    <section className="absolute px-4 lg:py-1 w-full top-0 left-0 flex flex-col z-30 h-full justify-center space-y-6 lg:justify-between">
+      <article className="hidden lg:flex text-sm lg:space-y-4 justify-between items-center">
         <p>50</p>
         <aside className="flex gap-1 items-center justify-center">
           <span>
@@ -19,7 +19,7 @@ export default function CardDetails({
           </p>
         </aside>
       </article>
-      <article className="flex flex-col text-lg py-5 justify-center items-center">
+      <article className="flex flex-col text-lg lg:py-5 justify-center items-center">
         <h4>{city}</h4>
         <p>{country}</p>
       </article>

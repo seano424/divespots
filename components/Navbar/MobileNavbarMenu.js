@@ -9,7 +9,7 @@ export default function MobileNavbarMenu() {
     <ul
       className={`${
         showMenu ? 'absolute' : 'hidden'
-      }  text-base grid grid-cols-2 gap-8 py-8 top-20 px-4 w-10/12 bg-white shadow-2xl drop-shadow-2xl text-gray-700 rounded-lg`}
+      } z-50 text-base grid grid-cols-2 gap-8 py-8 top-20 px-4 w-10/12 bg-white shadow-2xl drop-shadow-2xl text-gray-700 rounded-lg`}
     >
       <MobileNavLink href="/" emoji="🌎" title="Join Divespots" />
       <MobileNavLink href="/" emoji="🤿" title="Explore" />
