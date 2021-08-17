@@ -2,7 +2,9 @@ import { useState } from 'react'
 import { AiOutlineHeart, AiFillHeart } from 'react-icons/ai'
 import CardOverlayDetails from './CardOverlayDetails'
 
-export default function CardOverlay({ fun, weather, safety }) {
+export default function CardOverlay({
+  attributes = { fun: '90', weather: '80', safety: '100' },
+}) {
   const [heartOpen, setHeartOpen] = useState(false)
   return (
     <section
@@ -13,15 +15,26 @@ export default function CardOverlay({ fun, weather, safety }) {
           {!heartOpen ? (
             <AiOutlineHeart onClick={() => setHeartOpen(!heartOpen)} />
           ) : (
-            <AiFillHeart color="red" onClick={() => setHeartOpen(!heartOpen)} />
+            <AiFillHeart
+              color="#ee4266"
+              onClick={() => setHeartOpen(!heartOpen)}
+            />
           )}
         </div>
       </article>
       <article className="h-full pt-5 flex flex-col items-start">
         <CardOverlayDetails />
-        <CardOverlayDetails attr={fun} title="Fun" emoji="😎" />
-        <CardOverlayDetails attr={weather} title="Weather" emoji="☔️" />
-        <CardOverlayDetails attr={safety} title="Safety" emoji="👷‍♀️" />
+        <CardOverlayDetails attr={attributes.fun} title="Fun" emoji="😎" />
+        <CardOverlayDetails
+          attr={attributes.weather}
+          title="Weather"
+          emoji="☔️"
+        />
+        <CardOverlayDetails
+          attr={attributes.safety}
+          title="Safety"
+          emoji="👷‍♀️"
+        />
       </article>
     </section>
   )

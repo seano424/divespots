@@ -13,7 +13,7 @@ export default function ProfileMenu() {
       {showProfile && !showMenu && (
         <ul
           onMouseLeave={() => toggleProfile(false)}
-          className="absolute top-12 pt-6 right-0 flex flex-col shadow-2xl drop-shadow-2xl gap-4 p-4 bg-white text-base text-gray-700 dark:text-gray-50 dark:bg-black rounded-lg"
+          className="absolute top-12 pt-6 right-0 flex flex-col shadow-2xl drop-shadow-2xl gap-4 p-4 bg-white text-base text-gray-700 dark:text-gray-50 dark:bg-black rounded-lg z-50"
         >
           <ProfileLink href="/" emoji="👩‍🎤" title="Profile" />
           <ProfileLink href="/" title="My Favorites">

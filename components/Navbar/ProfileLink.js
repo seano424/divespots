@@ -12,7 +12,7 @@ export default function ProfileLink({ href, emoji, children, title, button }) {
         >
           {' '}
           <span className="flex-shrink-0 w-10">{children}</span>
-          <span className="min-w-max transform hover:scale-105 hover:text-gray-900">
+          <span className="min-w-max transform hover:scale-105 hover:text-gray-900 dark:hover:text-gray-50">
             {title}
           </span>
         </div>
@@ -23,7 +23,7 @@ export default function ProfileLink({ href, emoji, children, title, button }) {
             <span className="flex-shrink-0 w-10 ">
               {emoji ? emoji : children}
             </span>
-            <span className="min-w-max transform hover:scale-105 hover:text-gray-900">
+            <span className="min-w-max transform hover:scale-105 hover:text-gray-900 dark:hover:text-gray-50">
               {title}
             </span>
           </a>
