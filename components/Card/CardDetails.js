@@ -4,7 +4,6 @@ export default function CardDetails({
   country = 'USA',
   weather = { temperature: '32' },
 }) {
-  console.log(weather.temperature)
   return (
     <section className="absolute px-4 lg:py-1 w-full top-0 left-0 flex flex-col z-30 h-full justify-center space-y-6 lg:justify-between">
       <article className="hidden lg:flex text-sm lg:space-y-4 justify-between items-center">

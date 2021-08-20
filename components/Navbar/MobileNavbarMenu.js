@@ -9,16 +9,17 @@ export default function MobileNavbarMenu() {
     <ul
       className={`${
         showMenu ? 'absolute' : 'hidden'
-      } z-50 text-base grid grid-cols-2 gap-8 py-8 top-20 px-4 w-10/12 bg-white shadow-2xl drop-shadow-2xl text-gray-700 rounded-lg`}
+      } z-50 text-base grid grid-cols-2 gap-8 py-8 top-20  w-10/12 bg-white dark:bg-black shadow-2xl drop-shadow-2xl text-gray-700 dark:text-white rounded-lg`}
     >
       <MobileNavLink href="/" emoji="🌎" title="Join Divespots" />
       <MobileNavLink href="/" emoji="🤿" title="Explore" />
       <Link href="/">
-        <a className="flex">
-          <span className="h-6 w-8 text-white dark:bg-white dark:text-black flex-shrink">
-            <span className="bg-black text-xs p-[2px]">DS</span>
+        <a className="flex px-3">
+          <span className="flex-shrink font-black navitems rounded-tr-lg rounded-bl-lg bg-black text-white dark:text-black dark:bg-white w-7 items-center justify-center flex">
+            <span className="text-secondary">D</span>S
           </span>
-          <span className="transform hover:scale-105 hover:text-gray-900">
+
+          <span className="transform pl-2 hover:scale-105 hover:text-gray-900 dark:hover:text-gray-100">
             Homepage
           </span>
         </a>

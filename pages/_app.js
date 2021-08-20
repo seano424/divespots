@@ -32,20 +32,14 @@ function MyApp({ Component, pageProps }) {
       <ThemeProvider attribute="class">
         <MobileViewProvider>
           <Layout>
-            {publicPages.includes(router.pathname) ? (
-              <Component {...pageProps} />
-            ) : (
-              <>
-                <SignedIn>
-                  <ApolloProviderWrapper>
-                    <Component {...pageProps} />
-                  </ApolloProviderWrapper>
-                </SignedIn>
-                <SignedOut>
-                  <RedirectToSignIn />
-                </SignedOut>
-              </>
-            )}
+            <SignedIn>
+              <ApolloProviderWrapper>
+                <Component {...pageProps} />
+              </ApolloProviderWrapper>
+            </SignedIn>
+            <SignedOut>
+              <RedirectToSignIn />
+            </SignedOut>
           </Layout>
         </MobileViewProvider>
       </ThemeProvider>

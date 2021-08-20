@@ -2,6 +2,8 @@ import Cards from '@/components/Card/Cards'
 import Head from 'next/head'
 import { SignedIn, SignedOut } from '@clerk/clerk-react'
 import Link from 'next/link'
+import LocationsList from '@/components/LocationsList'
+import AddLocation from '@/components/AddLocation'
 
 export default function Home() {
   const SignupLink = () => (
@@ -28,7 +30,9 @@ export default function Home() {
         /> */}
       </Head>
       <main className="flex flex-col items-center justify-center w-full flex-1 text-center">
+        <AddLocation />
         <Cards />
+        <LocationsList />
         <SignedOut>
           <SignupLink />
         </SignedOut>
