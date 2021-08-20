@@ -15,7 +15,7 @@ export default function ProfileMenu() {
           onMouseLeave={() => toggleProfile(false)}
           className="absolute top-12 pt-6 right-0 flex flex-col shadow-2xl drop-shadow-2xl gap-4 p-4 bg-white text-base text-gray-700 dark:text-gray-50 dark:bg-black rounded-lg z-50"
         >
-          <ProfileLink href="/" emoji="👩‍🎤" title="Profile" />
+          <ProfileLink href="/profile" emoji="👩‍🎤" title="Profile" />
           <ProfileLink href="/" title="My Favorites">
             <IoIosHeart color="red" />
           </ProfileLink>

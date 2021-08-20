@@ -1,6 +1,6 @@
 import { FaWifi } from 'react-icons/fa'
 export default function CardDetails({
-  city = 'Key West',
+  place = 'Key West',
   country = 'USA',
   weather = { temperature: '32' },
 }) {
@@ -19,7 +19,7 @@ export default function CardDetails({
         </aside>
       </article>
       <article className="flex flex-col text-lg lg:py-5 justify-center items-center">
-        <h4>{city}</h4>
+        <h4>{place}</h4>
         <p>{country}</p>
       </article>
       <article className="flex items-center justify-between text-sm">

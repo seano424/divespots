@@ -7,8 +7,9 @@
   },
   "dependencies": {
     "@apollo/client": "^3.4.8",
-    "@clerk/clerk-react": "^1.16.1",
+    "@clerk/clerk-react": "^1.17.0",
     "@clerk/clerk-sdk-node": "^0.5.1",
+    "@clerk/nextjs": "^1.0.1",
     "graphql": "^15.5.1",
     "hamburger-react": "^2.4.1",
     "next": "latest",

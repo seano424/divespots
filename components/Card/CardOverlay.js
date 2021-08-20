@@ -24,17 +24,25 @@ export default function CardOverlay({
       </section>
 
       <section className="h-full lg:pt-5 flex flex-col items-start">
-        <CardOverlayDetails />
-        <CardOverlayDetails attr={attributes.fun} title="Fun" emoji="😎" />
         <CardOverlayDetails
-          attr={attributes.weather}
-          title="Weather"
-          emoji="☔️"
+          title="Dive Shops"
+          attr={attributes.dive_shops_rating || '70'}
+          emoji="🤿"
         />
         <CardOverlayDetails
-          attr={attributes.safety}
-          title="Safety"
-          emoji="👷‍♀️"
+          title="Overall Vibe"
+          attr={attributes.experience_rating || '99'}
+          emoji="🌎"
+        />
+        <CardOverlayDetails
+          title="Marine Life"
+          attr={attributes.marine_life_rating || '85'}
+          emoji="🦈"
+        />
+        <CardOverlayDetails
+          title="Climate"
+          attr={attributes.weather_rating || '80'}
+          emoji="☔️"
         />
       </section>
     </main>
