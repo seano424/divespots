@@ -5,7 +5,6 @@ import MobileNavbarMenu from './MobileNavbarMenu'
 import Profile from '../Profile/Profile'
 import Logo from '../Commons/Logo'
 import { SignedIn, SignedOut } from '@clerk/clerk-react'
-import Link from 'next/link'
 import NavItem from './NavItem'
 
 export default function Nav() {
