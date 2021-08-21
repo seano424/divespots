@@ -3,6 +3,7 @@ import { useTheme } from 'next-themes'
 
 export default function ProfileLink({ href, emoji, children, title, button }) {
   const { theme, setTheme } = useTheme()
+
   return (
     <>
       {button ? (

@@ -1,9 +1,11 @@
 import Image from 'next/image'
 import { useContext } from 'react'
 import { MobileViewContext } from 'contexts/MobileViewContext'
+import { useUser } from '@clerk/nextjs'
 
 export default function ProfileAvatar() {
   const { showProfile, toggleProfile } = useContext(MobileViewContext)
+  const { profileImageUrl } = useUser()
   return (
     <div
       onClick={() => toggleProfile(!showProfile)}
@@ -12,7 +14,7 @@ export default function ProfileAvatar() {
       <div className="h-12 w-12 md:h-10 md:w-10 rounded-full bg-white block p-[1.2px]">
         <Image
           className="rounded-full object-cover hover:-rotate-6 transform transition filter brightness-105"
-          src="/images/me.jpg"
+          src={profileImageUrl}
           alt="Profile Picture"
           width={40}
           height={40}

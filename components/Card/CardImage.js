@@ -8,7 +8,7 @@ export default function CardImage({
         layout="fill"
         src={image}
         alt="image of Utah"
-        className="rounded-tr-3xl rounded-bl-3xl"
+        className="rounded-tr-3xl rounded-bl-3xl object-cover"
       />
     </section>
   )

@@ -10,16 +10,11 @@ import {
 } from '@clerk/clerk-react'
 import { ThemeProvider } from 'next-themes'
 import MobileViewProvider from 'contexts/MobileViewContext'
-import { ApolloProviderWrapper } from '../lib/apolloClient'
+import {
+  ApolloProviderWrapper,
+  ApolloProviderWrapperWithoutUser,
+} from '../lib/apolloClient'
 
-/**
- * List pages you want to be publicly accessible, or leave empty if
- * every page requires authentication. Use this naming strategy:
- *  "/"              for pages/index.js
- *  "/foo"           for pages/foo/index.js
- *  "/foo/bar"       for pages/foo/bar.js
- *  "/foo/[...bar]"  for pages/foo/[...bar].js
- */
 const publicPages = ['/', '/sign-in/[[...index]]', '/sign-up/[[...index]]']
 
 function MyApp({ Component, pageProps }) {
@@ -32,14 +27,22 @@ function MyApp({ Component, pageProps }) {
       <ThemeProvider attribute="class">
         <MobileViewProvider>
           <Layout>
-            <SignedIn>
-              <ApolloProviderWrapper>
+            {publicPages.includes(router.pathname) ? (
+              <ApolloProviderWrapperWithoutUser>
                 <Component {...pageProps} />
-              </ApolloProviderWrapper>
-            </SignedIn>
-            <SignedOut>
-              <RedirectToSignIn />
-            </SignedOut>
+              </ApolloProviderWrapperWithoutUser>
+            ) : (
+              <>
+                <SignedIn>
+                  <ApolloProviderWrapper>
+                    <Component {...pageProps} />
+                  </ApolloProviderWrapper>
+                </SignedIn>
+                <SignedOut>
+                  <RedirectToSignIn />
+                </SignedOut>
+              </>
+            )}
           </Layout>
         </MobileViewProvider>
       </ThemeProvider>

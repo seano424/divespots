@@ -1,6 +1,6 @@
 import Cards from '@/components/Card/Cards'
 import Head from 'next/head'
-import { SignedOut } from '@clerk/clerk-react'
+import { SignedOut, SignedIn, RedirectToSignIn } from '@clerk/clerk-react'
 import Link from 'next/link'
 
 export default function Home() {
@@ -23,9 +23,6 @@ export default function Home() {
         <link rel="icon" href="/images/favicon.ico" />
       </Head>
       <Cards />
-      <SignedOut>
-        <SignupLink />
-      </SignedOut>
     </main>
   )
 }
