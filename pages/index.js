@@ -22,7 +22,9 @@ export default function Home() {
         <title>Divespots - Best place for divers around the 🌏 🐳 🐠 🦀</title>
         <link rel="icon" href="/images/favicon.ico" />
       </Head>
-      <Cards />
+      <SignedOut>
+        <Cards />
+      </SignedOut>
     </main>
   )
 }
